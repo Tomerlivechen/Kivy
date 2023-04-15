@@ -1,0 +1,17 @@
+<Button>:
+    font_size:40
+    color:0.5,0.2,0.9,1
+    size_hint:{0.5,0.1}
+
+
+<FloatLayout>:
+    Button:
+#       pos_hint: {"x","y","top","bottom","left",right} location positions value between 0-1
+        pos_hint: {"x":0.5,"top":1}
+        text:"First text"
+    Button:
+        id : sbtn
+        pos_hint: {"y":0.5}
+        text:"Second text" if sbtn.state =="normal" else "pressed"
+        background_color:0.5,0.2,0.9,1
+        
